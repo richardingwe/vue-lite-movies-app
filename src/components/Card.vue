@@ -7,8 +7,8 @@
 				alt="Card image"
 				style="width: 100%"
 			/>
-			<div class="card-body" @click="toggleModal">
-				<a href="#" :class="buttonColor" class="btn w-100 text-center">{{
+			<div class="card-body" @click.prevent="toggleModal">
+				<a href="" :class="buttonColor" class="btn w-100 text-center">{{
 					movieName
 				}}</a>
 			</div>
@@ -21,8 +21,8 @@
 		props: ['imgUrl', 'movieName', 'buttonColor'],
 		methods: {
 			toggleModal() {
-				console.log(this.movieName);
-				this.$emit('toggleShowModal');
+				// console.log(this.movieName);
+				this.$emit('toggleShowModal', { moviename: this.movieName });
 			},
 		},
 	};

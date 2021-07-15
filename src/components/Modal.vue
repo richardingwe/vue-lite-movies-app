@@ -3,7 +3,7 @@
 		<div class="modalContainer">
 			<div class="header">
 				<h3 class="Title">
-					Hello There
+					{{ movie.movieName }}
 				</h3>
 				<i class="fas fa-times" @click="$emit('toggleShowModal')"></i>
 			</div>
@@ -23,7 +23,7 @@
 
 <script>
 	export default {
-		props: ['showModal'],
+		props: ['showModal', 'movie'],
 	};
 </script>
 

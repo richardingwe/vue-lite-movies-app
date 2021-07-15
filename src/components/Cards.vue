@@ -14,7 +14,11 @@
 				/>
 			</div>
 		</div>
-		<Modal :showModal="showModal" @toggleShowModal="toggleShow" />
+		<Modal
+			:showModal="showModal"
+			@toggleShowModal="toggleShow"
+			:movie="movie"
+		/>
 	</section>
 </template>
 
@@ -28,14 +32,15 @@
 			Modal,
 		},
 		methods: {
-			toggleShow() {
+			toggleShow(movieName) {
 				this.showModal = !this.showModal;
-				console.log('hello');
+				this.movie.movieName = movieName.moviename;
 			},
 		},
 		data() {
 			return {
 				showModal: false,
+				movie: { movieName: 'Not Stated' },
 				movieData: [
 					{
 						imgUrl: 'https://static.netnaija.com/i/Aq2NA3yn7zJ.jpg',
