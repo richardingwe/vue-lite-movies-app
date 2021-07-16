@@ -18,11 +18,14 @@
 
 <script>
 	export default {
-		props: ['imgUrl', 'movieName', 'buttonColor'],
+		props: ['imgUrl', 'movieName', 'buttonColor', 'desc'],
 		methods: {
 			toggleModal() {
 				// console.log(this.movieName);
-				this.$emit('toggleShowModal', { moviename: this.movieName });
+				this.$emit('toggleShowModal', {
+					moviename: this.movieName,
+					movieDesc: this.desc,
+				});
 			},
 		},
 	};

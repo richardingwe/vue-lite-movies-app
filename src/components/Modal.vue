@@ -1,5 +1,5 @@
 <template>
-	<div class="modalDiv" v-if="showModal">
+	<div class="modalDiv" v-show="showModal">
 		<div class="modalContainer">
 			<div class="header">
 				<h3 class="Title">
@@ -9,13 +9,7 @@
 			</div>
 			<hr />
 			<div class="Body">
-				Watch your assets.
-				<br />
-				The reboot follows two of America's wealthiest families, the Carringtons
-				and the Colbys, as they feud for control over their fortune and their
-				children focusing on Fallon Carrington, the daughter of billionaire
-				Blake Carrington, and her soon-to-be stepmother, Cristal, a Hispanic
-				woman marrying into this WASP family and America's most powerful class.
+				{{ movie.movieDesc }}
 			</div>
 		</div>
 	</div>
