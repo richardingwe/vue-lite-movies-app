@@ -1,5 +1,5 @@
 <template>
-	<div class="modalDiv" v-show="showModal">
+	<div @click.self="closeModal" class="modalDiv" v-show="showModal">
 		<div class="modalContainer">
 			<div class="header">
 				<h3 class="Title">
@@ -18,6 +18,12 @@
 <script>
 	export default {
 		props: ['showModal', 'movie'],
+		methods: {
+			closeModal(e) {
+				if (!e.target.classList.contains('modalContainer'))
+					this.$emit('toggleShowModal');
+			},
+		},
 	};
 </script>
 
@@ -42,7 +48,6 @@
 
 	.modalContainer {
 		width: 80vw;
-		height: 60vh;
 		background-color: rgb(245, 248, 250);
 		border-radius: 5px;
 		border: 1px solid black;
@@ -51,12 +56,22 @@
 
 	i {
 		cursor: pointer;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	.Title,
 	.Body {
 		text-align: left;
 		margin-bottom: 1rem;
+	}
+
+	@media (max-width: 480px) {
+		.modalContainer {
+			width: 80vw;
+			background-color: rgb(245, 248, 250);
+			border-radius: 5px;
+			border: 1px solid black;
+			padding: 2rem 2.5rem;
+		}
 	}
 </style>
