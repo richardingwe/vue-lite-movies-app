@@ -48,29 +48,53 @@
 				movie: { movieName: 'Not Stated', movieDesc: '...' },
 				movieData: [
 					{
+						imgUrl: 'https://static.netnaija.com/i/AqgKGRo1Nr1.jpg',
+						movieName: 'Space Jam: A New Legacy (2021)',
+						buttonColor: 'btn-primary',
+						desc:
+							"Welcome to the Jam! When LeBron and his young son Dom are trapped in a digital space by a rogue A.I., LeBron must get them home safe by leading Bugs, Lola Bunny and the whole gang of notoriously undisciplined Looney Tunes to victory over the A.I.'s digitized champions on the court. It's Tunes versus Goons in the highest-stakes challenge of his life.",
+					},
+					{
 						imgUrl: 'https://static.netnaija.com/i/Aq2NA3yn7zJ.jpg',
 						movieName: 'Luca (2021)',
 						buttonColor: 'btn-danger',
+						desc:
+							"This summer, you're invited to Portorosso. Two young boys experience an unforgettable Italian summer filled with gelato, pasta, and endless scooter rides. But all the fun is threatened by a deeply-held secret: they are sea monsters from another world just below the water's surface.",
 					},
 					{
 						imgUrl: 'https://static.netnaija.com/i/yMX7y3lYN83.jpg',
 						movieName: 'Fatherhood (2021)',
 						buttonColor: 'btn-success',
+						desc:
+							'In it, together. A widowed new dad copes with doubts, fears, heartache, and dirty diapers as he sets out to raise his daughter on his own.',
 					},
 					{
 						imgUrl: 'https://static.netnaija.com/i/m9z7oylWN2r.jpg',
 						movieName: 'The Father (2021)',
 						buttonColor: 'btn-primary',
+						desc:
+							'The story of Ba Sang - the second of the 4 noisy siblings: Giau, Sang, Phu, Quy. Ba Sang is a meddler, "too" kind, and always sacrifice for others despite they want it or not. Quan - Ba Sang\'s son is a modern young Youtuber.',
 					},
 					{
 						imgUrl: 'https://static.netnaija.com/i/LqXNEoXJ7lE.jpg',
 						movieName: 'Rollers (2021)',
 						buttonColor: 'btn-warning',
+						desc:
+							'Rufus Paisley is an alcoholic who refuses to admit it. Everything he loves is gathered in one place: the "Rollers". He even gave up a promising career as a musician to stay there. But this historic place, once owned by his parents, is in difficulty and he is short of the means to save it. His friends urge him to move on, but can he?',
+					},
+					{
+						imgUrl: 'https://static.netnaija.com/i/zxG7ZjxQ7q2.jpg',
+						movieName: 'Pig (2021)',
+						buttonColor: 'btn-dark',
+						desc:
+							"We don't get a lot of things to really care about. A truffle hunter who lives alone in the Oregonian wilderness must return to his past in Portland in search of his beloved foraging pig after she is kidnapped.",
 					},
 					{
 						imgUrl: 'https://img.netnaija.com/GqLKHK.jpg',
 						movieName: 'The Flash',
 						buttonColor: 'btn-danger',
+						desc:
+							'Barry Allen wakes up 9 months after he was struck by lightning and discovers that the bolt gave him the power of super speed. With his new team and powers, Barry becomes "The Flash" and fights crime in Central City.',
 					},
 					{
 						imgUrl: 'https://static.netnaija.com/i/deYakyoQKP3.jpg',
