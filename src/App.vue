@@ -1,5 +1,6 @@
 <template>
-	<AddMovie />
+	<div class="add"><i class="fas fa-plus"></i></div>
+	<!-- <AddMovie /> -->
 	<Cards />
 	<!-- <section class="container">
 		<div class="row section">
@@ -127,6 +128,25 @@
 </script>
 
 <style>
+	.add {
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+		background: black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		transition: 200ms ease;
+	}
+
+	.add:hover {
+		transform: scale(1.3);
+	}
+
+	.add i {
+		color: white;
+	}
 	.section-1 {
 		height: 1000px;
 	}
