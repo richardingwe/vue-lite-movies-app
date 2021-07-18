@@ -1,4 +1,5 @@
 <template>
+	<AddMovie />
 	<Cards />
 	<!-- <section class="container">
 		<div class="row section">
@@ -114,11 +115,13 @@
 
 <script>
 	import Cards from './components/Cards.vue';
+	import AddMovie from './components/AddMovie.vue';
 
 	export default {
 		name: 'App',
 		components: {
 			Cards,
+			AddMovie,
 		},
 	};
 </script>
