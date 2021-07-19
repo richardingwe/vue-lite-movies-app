@@ -1,6 +1,11 @@
 <template>
-	<div class="add"><i class="fas fa-plus"></i></div>
-	<!-- <AddMovie /> -->
+	<div @click="showForm = !showForm" class="add">
+		<i class="fas fa-plus" :class="{ rotate: showForm }"></i>
+	</div>
+
+	<div v-show="showForm">
+		<AddMovie />
+	</div>
 	<Cards />
 	<!-- <section class="container">
 		<div class="row section">
@@ -124,6 +129,11 @@
 			Cards,
 			AddMovie,
 		},
+		data() {
+			return {
+				showForm: false,
+			};
+		},
 	};
 </script>
 
@@ -138,6 +148,7 @@
 		align-items: center;
 		border-radius: 50%;
 		transition: 200ms ease;
+		cursor: pointer;
 	}
 
 	.add:hover {
@@ -147,6 +158,12 @@
 	.add i {
 		color: white;
 	}
+
+	.rotate {
+		transform: rotate(45deg);
+		transition: 200ms ease;
+	}
+
 	.section-1 {
 		height: 1000px;
 	}
