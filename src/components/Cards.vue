@@ -43,19 +43,6 @@
 				this.showModal = !this.showModal;
 			},
 		},
-		// computed: {
-		// 	newMovieData() {
-		// 		return (movieData = [
-		// 			...movieData,
-		// 			{
-		// 				imgUrl: movie.imgUrl,
-		// 				movieName: movie.movieTitle,
-		// 				buttonColor: movie.btnColor,
-		// 				desc: movie.desc,
-		// 			},
-		// 		]);
-		// 	},
-		// },
 		data() {
 			return {
 				showModal: false,
