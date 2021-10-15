@@ -3,7 +3,7 @@
 
 	<form @submit.prevent="submitMovie" class="container w-50">
 		<div class="mb-3">
-			<labe class="form-label">Movie Title</labe>
+			<label class="form-label">Movie Title</label>
 			<input
 				type="text"
 				class="form-control"
@@ -13,7 +13,7 @@
 			/>
 		</div>
 		<div class="mb-3">
-			<labe class="form-label">Movie Image Url</labe>
+			<label class="form-label">Movie Image Url</label>
 			<input
 				type="text"
 				class="form-control"
@@ -23,7 +23,7 @@
 			/>
 		</div>
 		<div class="mb-3">
-			<labe class="form-label">Select Button colour</labe>
+			<label class="form-label">Select Button colour</label>
 			<select
 				class="form-select"
 				v-model="btnColor"
